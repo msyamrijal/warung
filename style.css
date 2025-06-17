@@ -148,3 +148,18 @@ footer {
     color: #fff;
     margin-top: 30px;
 }
+
+.whatsapp-button {
+    background-color: #25D366; /* Warna hijau WhatsApp */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block; /* Agar padding dan margin bekerja dengan baik */
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    background-color: #1DAE52; /* Warna hijau sedikit lebih gelap saat hover */
+}

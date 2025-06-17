@@ -1,0 +1,150 @@
+/* CSS Dasar untuk Halaman */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Warna latar belakang lebih lembut */
+    color: #343a40; /* Warna teks utama lebih gelap untuk kontras */
+    line-height: 1.6;
+}
+
+header {
+    background-color: #2c3e50; /* Biru tua yang elegan */
+    color: #fff;
+    padding: 1.5em 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.2em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    background-color: #34495e; /* Biru sedikit lebih muda dari header */
+    margin: 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block; /* Tetap inline-block */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+nav ul li a:hover {
+    background-color: #1abc9c; /* Warna aksen saat hover */
+    color: #fff;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px; /* Batas lebar maksimum untuk layar besar */
+    margin: auto;
+    overflow: hidden;
+    padding: 30px 20px; /* Padding lebih besar */
+}
+
+/* Bagian Kelas (sebelumnya Menu) */
+.menu-section { /* Nama kelas bisa diganti menjadi .class-section jika lebih sesuai */
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #ffffff; /* Latar belakang putih untuk setiap seksi */
+    border-radius: 8px; /* Sudut membulat */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05); /* Bayangan halus */
+}
+
+.menu-section:last-of-type {
+    border-bottom: none;
+}
+
+.menu-section h2 { /* Bisa juga .class-section h2 */
+    color: #2c3e50; /* Warna judul seksi sama dengan header */
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+.menu-item { /* Bisa juga .class-item */
+    display: flex; /* Menggunakan flexbox untuk tata letak item menu */
+    align-items: flex-start; /* Menyelaraskan item ke atas */
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e9ecef; /* Garis pemisah lebih halus */
+}
+
+.menu-item:last-child {
+    border-bottom: none; /* Hapus border untuk item terakhir */
+}
+
+.menu-item img { /* Bisa juga .class-item img */
+    width: 180px; /* Lebar gambar sedikit lebih besar */
+    height: 180px; /* Tinggi gambar agar konsisten */
+    object-fit: cover; /* Memastikan gambar mengisi area tanpa distorsi, mungkin memotong sebagian */
+    border-radius: 8px; /* Sudut gambar sedikit melengkung */
+    margin-right: 20px; /* Jarak antara gambar dan teks */
+    border: none; /* Hapus border default, biarkan bayangan yang memberi efek */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+.menu-item img:hover {
+    transform: scale(1.03); /* Efek zoom kecil saat hover */
+}
+.menu-item-details { /* Bisa juga .class-item-details */
+    flex: 1; /* Biarkan detail menu mengisi sisa ruang */
+}
+
+.menu-item-details h3 { /* Bisa juga .class-item-details h3 */
+    margin-top: 0;
+    color: #34495e; /* Warna judul item */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.menu-item-details p { /* Bisa juga .class-item-details p */
+    font-size: 0.95em; /* Sedikit lebih besar untuk keterbacaan */
+    line-height: 1.7;
+    color: #555; /* Warna teks deskripsi */
+    margin-bottom: 10px;
+}
+
+.menu-item-details ul {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+.menu-item-details ul li {
+    margin-bottom: 5px;
+}
+
+.price {
+    font-weight: bold;
+    color: #1abc9c; /* Warna harga (aksen) */
+    font-size: 1.2em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2c3e50; /* Sama dengan header */
+    color: #fff;
+    margin-top: 30px;
+}
